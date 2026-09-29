@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple website built with Node.js.">
+  <title>Launchpad — A Simple Node.js Website</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#"><span class="logo-icon">L</span> launchpad</a>
+      <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-button" href="#about">Get started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> SIMPLE IDEAS. BUILT WELL.</div>
+        <h1>A little idea.<br><span>A real website.</span></h1>
+        <p class="hero-description">A clean, responsive starter website powered by Node.js. Simple to understand, easy to customize, and ready for your own content.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">Explore features <span>→</span></a>
+          <a class="button secondary" href="#about">Learn more</a>
+        </div>
+        <div class="social-proof"><div class="avatar-stack"><span>A</span><span>B</span><span>C</span></div><p><strong>Small and focused</strong><br>Everything you need to get started.</p></div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card card-back"><span class="tiny-label">YOUR NEXT IDEA</span><div class="skeleton long"></div><div class="skeleton medium"></div><div class="skeleton short"></div></div>
+        <div class="art-card card-front">
+          <div class="card-top"><span class="card-symbol">✦</span><span class="card-status">All systems go</span></div>
+          <div class="illustration-circle"><span>✳</span></div>
+          <h3>Make it happen.</h3><p>One step at a time.</p>
+          <div class="progress-track"><span></span></div>
+          <div class="progress-caption"><span>Getting started</span><strong>01 / 03</strong></div>
+        </div>
+        <div class="floating-badge"><span>✦</span> Keep it simple</div>
+      </div>
+    </section>
+
+    <section class="features section container" id="features">
+      <div class="section-heading">
+        <div><div class="eyebrow">WHAT YOU GET</div><h2>Simple by design.</h2></div>
+        <p>A small foundation you can make your own, without unnecessary complexity.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon lavender">✳</div><h3>Clean design</h3><p>A clear layout with thoughtful spacing, soft colors, and readable typography.</p><a href="#about">Explore <span>→</span></a></article>
+        <article class="feature-card"><div class="feature-icon mint">⌘</div><h3>Responsive layout</h3><p>Works smoothly across desktop, tablet, and mobile screen sizes.</p><a href="#about">Explore <span>→</span></a></article>
+        <article class="feature-card"><div class="feature-icon peach">↗</div><h3>Easy to customize</h3><p>Plain HTML, CSS, and a small Express server. Change anything you like.</p><a href="#about">Explore <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-inner">
+        <div class="about-copy"><div class="eyebrow">A GOOD PLACE TO BEGIN</div><h2>Start small.<br><span>Build from here.</span></h2><p>This website is intentionally straightforward. Update the text, adjust the colors, add a page, or connect your own API as you learn.</p><a class="button primary" href="#contact">Say hello <span>→</span></a></div>
+        <div class="quote-card"><span class="quote-mark">“</span><p>Great things are done by a series of small things brought together.</p><span class="quote-author">— Vincent van Gogh</span><div class="quote-decoration">✳</div></div>
+      </div>
+    </section>
+
+    <section class="contact section container" id="contact">
+      <div class="contact-card"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Have a question?</h2><p>Press the button and the Node.js server will send a little message back.</p></div><button class="button primary" id="message-button">Say hello <span>→</span></button><p class="api-message" id="api-message" role="status" aria-live="polite"></p></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="logo" href="#"><span class="logo-icon">L</span> launchpad</a><p>Made with care and a little Node.js.</p><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
