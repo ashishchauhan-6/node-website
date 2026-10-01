@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/message", (_req, res) => {
   res.json({
-    message: "Hello from Node.js!",
+    message: "HELLO kya hal chal nodejs !",
     timestamp: new Date().toISOString()
   });
 });
