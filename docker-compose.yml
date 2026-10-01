@@ -1,7 +1,6 @@
 services:
   app:
-    build: .
-    image: simple-node-website:v1
+    image: ashish0206/node-website:latest
     container_name: node-app
     restart: unless-stopped
     expose:
